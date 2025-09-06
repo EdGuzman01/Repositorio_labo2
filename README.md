@@ -7,14 +7,14 @@
 
 # Respuesta Pregunta 10 – Guía de Laboratorio II (Programación Web)
 
-## ❓ Pregunta 10 (Página 10)
+##  Pregunta 10 (Página 10)
 **Actualice la página en su navegador y pregúntese:  
 ¿Hay cambios en la visualización del sitio web?  
 ¿Por qué se dan estos cambios entre tan pocas líneas de diseño CSS?**
 
 ---
 
-## ✅ Respuesta
+## Respuesta
 Sí, al actualizar la página **se observan cambios en la visualización del sitio web**.  
 
 Esto ocurre porque **CSS aplica reglas globales** que afectan directamente la manera en que los elementos HTML se distribuyen y se presentan.  
