@@ -1,0 +1,13 @@
+container {
+    display: grid ; /* or inline-grid */
+    grid-template-columns:
+        ifr ifr
+        minmax(10px, ifr) 3fr
+        repeat(5, ifr)
+        50px auto 100px ifr;
+    /* e.g.
+    grid-template-rows:
+        min-content ifr min-content
+        100px ifr max-content
+    */
+}

@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Estilo de cada cuadro */
+.item {
+    background-color: orange;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Ajuste de imágenes */
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* --- Responsive --- */
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}

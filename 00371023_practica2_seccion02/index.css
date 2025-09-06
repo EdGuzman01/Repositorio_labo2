@@ -1,0 +1,55 @@
+/* ➤ Selectores comunes */
+
+/* Universal */
+* {
+  box-sizing: border-box;
+}
+
+/* Type o Tag */
+p {
+  margin-block: 1.5rem;
+}
+
+/* Classname */
+.class {
+  text-decoration: underline;
+}
+
+/* ID */
+#id {
+  font-family: monospace;
+}
+
+/* Relational */
+li:has(a) {
+  display: flex;
+}
+
+
+/* ➤ Combinadores comunes */
+
+/* Descendant */
+header h1 {
+  
+}
+
+/* Child */
+header > h1 {
+  
+}
+
+/* General sibling */
+h1 ~ p {
+  
+}
+
+/* Adjacent sibling */
+h1 + p {
+  
+}
+
+/* Chained */
+h1, p {
+  
+
+}
