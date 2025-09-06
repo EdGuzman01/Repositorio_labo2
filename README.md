@@ -5,52 +5,23 @@
 
 ---
 
-## 📌 Preguntas y Respuestas
+# Respuesta Pregunta 10 – Guía de Laboratorio II (Programación Web)
 
-### 1. ¿Qué significa CSS?  
-CSS significa **Cascading Style Sheets** o **Hojas de Estilo en Cascada**.  
-Permite aplicar estilos (colores, formas, márgenes, posiciones, tipografía, etc.) a uno o varios documentos HTML de manera automática y masiva.
-
----
-
-### 2. ¿Cuál es la relación entre HTML y CSS?  
-- **HTML** se encarga de la **estructura y contenido** del sitio web.  
-- **CSS** se encarga de la **presentación y el diseño visual**.  
-HTML proporciona el esqueleto, mientras que CSS define cómo se verá ese contenido en el navegador.
+## ❓ Pregunta 10 (Página 10)
+**Actualice la página en su navegador y pregúntese:  
+¿Hay cambios en la visualización del sitio web?  
+¿Por qué se dan estos cambios entre tan pocas líneas de diseño CSS?**
 
 ---
 
-### 3. ¿Cuáles son las formas de enlazar CSS a un documento HTML?  
-1. **Archivo CSS externo:** Usando `<link rel="stylesheet" href="estilos.css">` dentro de `<head>`.  
-2. **Bloque de estilos:** Dentro del propio HTML, en la etiqueta `<style>...</style>`.  
-3. **Estilos en línea:** Usando el atributo `style="..."` directamente en una etiqueta HTML.
+## ✅ Respuesta
+Sí, al actualizar la página **se observan cambios en la visualización del sitio web**.  
 
----
+Esto ocurre porque **CSS aplica reglas globales** que afectan directamente la manera en que los elementos HTML se distribuyen y se presentan.  
+Propiedades como `display: flex` o `display: grid`, aunque se escriben en pocas líneas, tienen un **impacto estructural grande**, ya que modifican:  
 
-### 4. ¿Qué elementos componen la sintaxis de CSS?  
-- **Selector:** Elemento al que se aplicará el estilo.  
-- **Propiedad:** Característica a definir (ej. color, tamaño, margen).  
-- **Valor:** El valor de esa propiedad (ej. `red`, `20px`).  
-- **Regla:** Conjunto de propiedad + valor.  
-- **Comentario:** Texto entre `/* ... */` que no interpreta el navegador.
+- La **forma en que los elementos hijos se organizan** dentro del contenedor.  
+- El **alineamiento** (horizontal y vertical).  
+- La **distribución del espacio** entre los elementos.  
 
----
-
-### 5. ¿Qué es Flexbox?  
-Es un modelo de diseño en CSS que permite organizar elementos dentro de un **contenedor flexible**, distribuyendo espacio de manera eficiente y alineando elementos horizontal o verticalmente.  
-- El **contenedor padre** define la disposición (`display: flex`).  
-- Los **elementos hijos** se adaptan según las reglas definidas (ejemplo: `justify-content`, `align-items`).
-
----
-
-### 6. ¿Qué es Grid en CSS?  
-Es un sistema de diseño bidimensional que permite organizar elementos en **filas y columnas**.  
-A diferencia de Flexbox (que trabaja mejor en una sola dimensión), Grid facilita diseños más complejos.  
-Ejemplo básico:  
-
-```css
-.container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
+En resumen, **pocas líneas de CSS cambian la lógica del diseño completo**, transformando la experiencia visual sin necesidad de reescribir el HTML.
